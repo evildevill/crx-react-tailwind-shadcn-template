@@ -3,6 +3,16 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
+  "description": "A modern Chrome extension template with React, TypeScript, Vite, TailwindCSS v4, and shadcn/ui",
+  "author": "evildevill",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evildevill/crx-react-tailwind-shadcn-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/evildevill/crx-react-tailwind-shadcn-template/issues"
+  },
+  "homepage": "https://github.com/evildevill/crx-react-tailwind-shadcn-template#readme",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

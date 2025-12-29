@@ -60,8 +60,8 @@ Before you begin, ensure you have the following installed:
 
 ```bash
 # Clone this repository
-git clone <your-repo-url>
-cd chrome-extension-template
+git clone https://github.com/evildevill/crx-react-tailwind-shadcn-template.git
+cd crx-react-tailwind-shadcn-template
 
 # Or click "Use this template" on GitHub
 ```
@@ -561,6 +561,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Built with ❤️ for Chrome Extension Developers**
 
-[⭐ Star this repo](https://github.com/yourusername/chrome-extension-template) if you find it helpful!
+[⭐ Star this repo](https://github.com/evildevill/crx-react-tailwind-shadcn-template) if you find it helpful!
 
 </div>
