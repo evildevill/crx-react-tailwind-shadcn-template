@@ -1,21 +1,28 @@
 import Logo from '@/assets/crx.svg'
 import { useState } from 'react'
-import './App.css'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent } from '@/components/ui/card'
 
 function App() {
   const [show, setShow] = useState(false)
   const toggle = () => setShow(!show)
 
   return (
-    <div className="popup-container">
+    <div className="fixed bottom-4 right-4 z-50">
       {show && (
-        <div className={`popup-content ${show ? 'opacity-100' : 'opacity-0'}`}>
-          <h1>HELLO CRXJS</h1>
-        </div>
+        <Card className={`mb-4 transition-opacity duration-300 ${show ? 'opacity-100' : 'opacity-0'}`}>
+          <CardContent className="p-6">
+            <h1 className="text-2xl font-bold">HELLO CRXJS</h1>
+          </CardContent>
+        </Card>
       )}
-      <button className="toggle-button" onClick={toggle}>
-        <img src={Logo} alt="CRXJS logo" className="button-icon" />
-      </button>
+      <Button 
+        onClick={toggle}
+        size="icon"
+        className="rounded-full h-14 w-14 shadow-lg"
+      >
+        <img src={Logo} alt="CRXJS logo" className="h-8 w-8" />
+      </Button>
     </div>
   )
 }
