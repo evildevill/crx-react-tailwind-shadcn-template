@@ -11,9 +11,62 @@
 
 A modern, production-ready Chrome extension template with React, TypeScript, Vite, TailwindCSS v4, and shadcn/ui components.
 
-[Features](#features) • [Quick Start](#quick-start) • [Documentation](#documentation) • [Project Structure](#project-structure)
+📦 **Install instantly**: `npm create crx-template@latest my-extension`
+
+[Features](#features) • [Installation](#-installation) • [Quick Start](#quick-start) • [Documentation](#documentation) • [Project Structure](#project-structure)
 
 </div>
+
+---
+
+## 🚀 Features
+
+### Core Technologies
+- ⚡ **Vite 7** - Lightning-fast HMR and optimized builds
+- ⚛️ **React 19** - Latest React with modern hooks and features
+- 📘 **TypeScript** - Full type safety across the extension
+- 🎨 **TailwindCSS v4** - Latest Tailwind with native CSS support
+- 🎭 **shadcn/ui** - Beautiful, accessible component library
+- 🔧 **CRXJS Vite Plugin** - Seamless Chrome extension development
+
+### Chrome Extension Features
+- 📌 **Popup** - Extension popup interface
+- 📱 **Side Panel** - Modern side panel support (Chrome 114+)
+- 📝 **Content Scripts** - Inject UI into web pages
+- 🔐 **Manifest V3** - Latest Chrome extension manifest
+- 📦 **Auto-reload** - Instant updates during development
+- 🗜️ **Production Build** - Optimized and zipped for distribution
+
+### UI/UX Features
+- 🎨 **Pre-configured Theme** - Light/dark mode with CSS variables
+- 🧩 **Reusable Components** - Button, Card, and more from shadcn/ui
+- 💅 **Modern Styling** - Utility-first with Tailwind
+- ♿ **Accessible** - ARIA compliant components
+- 📐 **Responsive** - Mobile-first design approach
+
+---
+
+## � Installation
+
+Get started with a single command:
+
+```bash
+# Using npm (recommended)
+npm create crx-template@latest my-extension
+
+# Or using pnpm
+pnpm create crx-template@latest my-extension
+
+# Or using yarn
+yarn create crx-template@latest my-extension
+```
+
+Then follow the prompts and start building!
+
+```bash
+cd my-extension
+npm run dev
+```
 
 ---
 
@@ -49,41 +102,36 @@ A modern, production-ready Chrome extension template with React, TypeScript, Vit
 Before you begin, ensure you have the following installed:
 
 - **Node.js** (v18.0.0 or higher)
-- **pnpm** (v8.0.0 or higher) - [Install pnpm](https://pnpm.io/installation)
+- **npm**, **pnpm**, or **yarn**
 - **Google Chrome** or **Chromium-based browser**
 
 ---
 
 ## 🏁 Quick Start
 
-### 1. Clone or Use This Template
+### Option 1: Create New Project (Recommended)
+
+```bash
+npm create crx-template@latest my-extension
+cd my-extension
+npm run dev
+```
+
+### Option 2: Clone Repository
 
 ```bash
 # Clone this repository
 git clone https://github.com/evildevill/crx-react-tailwind-shadcn-template.git
 cd crx-react-tailwind-shadcn-template
 
-# Or click "Use this template" on GitHub
+# Install dependencies
+npm install
+
+# Start development
+npm run dev
 ```
 
-### 2. Install Dependencies
-
-```bash
-pnpm install
-```
-
-### 3. Start Development
-
-```bash
-pnpm dev
-```
-
-This will:
-- Start Vite development server with HMR
-- Watch for file changes
-- Build the extension to `dist/` folder
-
-### 4. Load Extension in Chrome
+### Load Extension in Chrome
 
 1. Open Chrome and navigate to `chrome://extensions/`
 2. Enable **Developer mode** (toggle in top-right corner)

@@ -1,0 +1,55 @@
+# Dependencies
+node_modules
+npm-debug.log
+pnpm-lock.yaml
+.pnpm-store
+
+# Build outputs (keep these to reduce install size)
+dist
+.dist
+
+# Development
+.venv
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Git
+.git
+.gitignore
+
+# CI/CD
+.github
+.gitlab-ci.yml
+.travis.yml
+
+# Testing
+coverage
+.nyc_output
+__tests__
+*.test.js
+*.spec.js
+
+# Documentation
+docs
+examples
+.docs
+
+# Misc
+.editorconfig
+CHANGELOG.md
+.prettierrc
+.eslintrc*
+tsconfig.app.json
+tsconfig.node.json
+vite.config.ts
+manifest.config.ts
+components.json

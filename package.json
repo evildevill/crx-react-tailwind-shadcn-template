@@ -1,10 +1,11 @@
 {
-  "name": "crx-react-tailwind-shadcn-template",
+  "name": "create-crx-template",
   "type": "module",
-  "version": "1.0.0",
-  "private": true,
-  "description": "A modern Chrome extension template with React, TypeScript, Vite, TailwindCSS v4, and shadcn/ui",
+  "version": "1.0.1",
+  "private": false,
+  "description": "A modern Chrome extension template with React, TypeScript, Vite, TailwindCSS v4, and shadcn/ui - Scaffold a new project instantly",
   "author": "evildevill",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/evildevill/crx-react-tailwind-shadcn-template.git"
@@ -13,6 +14,35 @@
     "url": "https://github.com/evildevill/crx-react-tailwind-shadcn-template/issues"
   },
   "homepage": "https://github.com/evildevill/crx-react-tailwind-shadcn-template#readme",
+  "keywords": [
+    "chrome-extension",
+    "template",
+    "react",
+    "vite",
+    "tailwindcss",
+    "shadcn-ui",
+    "typescript",
+    "browser-extension",
+    "starter-template",
+    "scaffold"
+  ],
+  "bin": {
+    "create-crx-template": "./bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "public",
+    "components.json",
+    "manifest.config.ts",
+    "tsconfig.json",
+    "tsconfig.app.json",
+    "tsconfig.node.json",
+    "vite.config.ts",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
